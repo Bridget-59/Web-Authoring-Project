@@ -1,0 +1,148 @@
+@charset "utf-8";
+		body{
+		background-color:#D8B097;
+		text-color:#121212;
+		}
+
+		#wrapper{
+		max-width: 1500px;
+		background-color:#B4D2D9;
+		margin-left: auto;
+		margin-right: auto;
+			
+		}
+	
+
+main img {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+		header{
+		text-align: center;
+		background-image:url("images/water5.jpg");
+		height: 80px;
+		text: uppercase;
+		color: #121212;
+		padding-top: 40px;
+		}
+		
+		nav{
+		background-color:#CCBFB9;
+		width:1500px;
+		height:80px;	
+		padding-top: 20px;
+		position:sticky;
+		top: 0px;
+		}
+		
+		main{
+		background-color:#B4D2D9;	
+		width: 1500px;
+
+		}
+
+/*		section{
+		background-color:#808080;
+		margin-left: 10px;
+		margin-right: 10px;
+		}
+*/		
+	
+		footer{
+		height: 130px;
+		text-align: center;
+		background-color: #CCBFB9;
+		/*clear:both;*/
+		}
+		
+		h1{
+		text-align: center;
+		font:bold;
+		font-size: 50px;
+		font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif"					
+		}
+		h2{
+		text-align: center;
+		font-size: 40px;
+		}
+		h3{
+		text-align: center;
+		font-size: 30px;
+}
+		p{
+		padding-left: 120px;
+		padding-right: 120px;
+	
+}
+		nav ul{
+		list-style-type: none;
+		margin:0px;
+		padding:0px;
+		overflow:hidden;			
+		}
+
+		li a{
+		display:inline;
+		float:left;
+		padding:8px;
+		
+}
+		a:link{
+		text-decoration: none;
+		background-color:#CCBFB9;
+		width:200px;
+		padding-right:20px;
+		padding-left:20px;
+		text-align: center;
+		font-weight: 900;
+		color:#483d8d;
+		}
+
+		a:visited {
+		color: #483d8d;
+		}
+
+		a:hover{
+		background-color: #483d8d;
+		text-decoration: underline;
+		color:#ffe4c4;
+		}
+
+		 a:active{
+		color: #483d8d;
+		}
+		
+		.dropdown {
+		float:left;
+		overflow:hidden
+		}
+
+		.dropdown-content{
+		display:none;
+		position:absolute;
+		background-color: #f9f9f9;
+		min-width: 100px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		}
+
+		.dropdown-content a{
+		float:none;
+		color:#483d8d;
+		padding: 12px 16px;
+		text-decoration:none;
+		display:block;
+		text-align:center;
+		}
+
+
+		.dropdown-content a:hover{
+		background-color:#483d8d;
+		color:#ffe4c4;
+		text-decoration: underline;
+		}
+
+		.dropdown:hover .dropdown-content{
+		display:block;
+		}
