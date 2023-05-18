@@ -2,11 +2,18 @@
 <html>
 <head>
 <meta charset="utf-8">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> 
+	
+	
 <title>Shannon Boating Home Page</title>
+	
 	<style>
 	
 	</style>
+	
 	<link href="Styles.css" rel="stylesheet" type="text/css">
+	<script src="https://kit.fontawesome.com/ae0c591f54.js" crossorigin="anonymous"></script>
+	
 </head>
 
 <body>
@@ -14,66 +21,118 @@
 	<div id="wrapper">
 	<header>
 		
-		</header>
+	</header>
 		
 	<nav>
 		<ul>
 			
-		<li><a href="index.html">Home</a></li>
-				
+		<li><a href="index.html"><i class="fas fa-home"></i></a></li>
+								
 			
-		<div class="dropdown">	
 		<li><a href="cruising.html">Cruising</a></li>
-			<div class="dropdown-content">
-			<li><a href="cruising.html">Cruising</a></li>			
-			<a href="cruising.html#MyHeading1">Cruiser Choice</a>
-			<a href="cruising.html#MyHeading2">Cruising Times</a>
-			<a href="cruising.html#MyHeading3">Suggested Cruises</a>	
-			</div>
-			</div>
-			
 		<li><a href="sailing.html">Sailing</a></li>
 	
+			
 		<li><a href="kayaking.html">Kayaking</a></li>
+		
 			
 		<li><a href="fishing.html">Fishing</a></li>
 			
 			
-		<div class="dropdown">	
 		<li><a href="about_us.html">About Us</a></li>
-			<div class="dropdown-content">
-			<a href="About Us.html">About Us</a>
-			<a href="about_us.html#MyHeading1">Testimonials</a>
-			<a href="about_us.htmlMyHeading2">FAQ</a>
-			<a href="about_us.html#MyHeading3">Find Us</a>
-			<a href="fishing.html#MyHeading4">Contact Us</a>
-
-			</div>
-			</div>
-	
 		</ul>	
-		</nav>
+	</nav>
 
-		<main>
+		<div class="slideshow-container">
+			
+		<div class="mySlides fade">
+        <img src="images/sailing2.jpg" width="100%" alt="">
+		</div>
+		
+		<div class="mySlides fade">
+        <img src="images/nature_boat3.jpg" width="100%" alt="">
+		</div>
+			
+			
+		<div class="mySlides fade">			
+		<img src="images/kayaking2.jpg" width="100%" alt=""> 
+		</div>
+			
+		<div class="mySlides fade">			
+		<img src="images/clonmac1.jpg" width="100%" alt=""> 
+		</div>	
+			
+		<div class="mySlides fade">
+		<img src="images/killaloe.jpg" width="100%" alt=""> 
+		</div>
+	
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			
+		</div>
+
+		
+	<main>
 		
 
-<h1>Diverse Boating Breaks <br>over 360km across 3 lakes</h1>
-		<p>Shannon Boating has been organising holidays on the River Shannon for over twenty years.  We offer our customers tailored holidays on boats that will suit every need.<br><br>
-		Our expertise will give you the confidence to have a holiday like no other on the majestic River Shannon and its lakes.  <br><br>
-		Our customers come to us year after year to organise their holidays as they have confidence in our ability to get them the best deals as well as suggesting new experiences them each year.</p>  
+		<h1>Diverse Boating Breaks <br>over 360km across 3 lakes</h1>
+			<p>Shannon Boating has been organising holidays on the River Shannon for over twenty years.  We offer our customers tailored holidays on boats that will suit every need.<br><br>		
+			Our expertise will give you the confidence to have a holiday like no other on the majestic River Shannon and its lakes.  <br><br>
+			Our customers come to us year after year to organise their holidays as they have confidence in our ability to get them the best deals as well as suggesting new experiences them each year.</p>
+			
+			<p>We always encourage our customers to visit two very helpful websites when planning any type of holiday on the River Shannon.<br><br>
+			Waterways Ireland is one of six North/South Implementation Bodies establised under the British-Irish Agreement of 1998. It is the cross-border navigational authority responsible for over 1000km of inland navigatable waterways in Ireland, principally for recreational purposes.  It updates regularly with important notices for water users giving water levels notices etc.  It also has extensive information of all types of activities connected to the waterways.
+			<a href="https://www.waterwaysireland.org" target="_blank">Waterways Ireland</a><br>
+			<br>
+			IWAI-Inland Waterways Association of Ireland was formed in 1954 to promote the development, use and maintenance of Ireland's navigable rivers and canals.  As an association it has worked to preserve the waterways as a valuable source for holidaying and activities including preventing the threatened closure of the Grand Canal in Dublin.  Its website also has lots of information freely availabe to all with maps and navigation hints gathered from its large membership over the years.
+			<a href="https://www.iwai.ie" target="_blank">Inland Waterways of Ireland</a><br>
+		<br>
+		</p>
 		</main>
-	
 		
 		
 	<footer>
-	  <h2>&copy;Bridget Chawke 2023</h2>
-		</footer>
+		<p>
+		Contact Us<br>	
+		<a href = "mail:21bridget.chawke@learner.lcetb.ie">Email info@Shannon Boating </a>
+		<br>
+		Mobile Number: 	087 222 2222<br>
+		Landline:		063 123456
+		</p>	
+	 	<h3>&copy;B Chawke 2023   </h3>
+	</footer>
 		
-	
-	
-	
-	
-	
 	</div>
+	
+
+		<script>
+	let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  
+  slides[slideIndex-1].style.display = "block";
+  
+}
+	</script>
+	<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/139549034.js"></script>
+<!-- End of HubSpot Embed Code -->
 </body>
 </html>
